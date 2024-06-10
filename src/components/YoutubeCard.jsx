@@ -1,9 +1,8 @@
-import React from 'react';
-import './YouTubeCard.css';
+import '../components/YouTubeCard.css';
 
-const YouTubeCard = ({ title, description }) => {
+const YoutubeCard = ({ title, description }) => {
   return (
-    <div className='youtube-card'>
+    <div className='youtubeCard'>
       <div className='thumbnail'></div>
       <div className='content'>
         <h3 className='title'>{title}</h3>
@@ -12,5 +11,4 @@ const YouTubeCard = ({ title, description }) => {
     </div>
   );
 };
-
-export default YouTubeCard;
+export default YoutubeCard;

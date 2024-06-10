@@ -1,67 +1,68 @@
-/* src/YouTubeCard.css */
-.youtube-card {
+.youtubeCard {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
   margin: 16px;
   width: 100%;
   max-width: 320px;
-  transition: box-shadow 0.3s ease;
 }
-
-.youtube-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .thumbnail {
   background-color: #ddd;
-  height: 180px;
+  height: 200px;
 }
 
 .content {
-  padding: 16px;
+  padding: 20px;
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin: 0 0 8px;
 }
 
 .description {
-  font-size: 1rem;
-  color: #555;
+  font-size: 16px;
 }
 
-/* Media Queries */
-@media (min-width: 576px) {
-  .youtube-card {
+/* Media queries */
+
+@media (max-width: 575px) {
+  .youtubeCard {
     max-width: 280px;
   }
-
   .thumbnail {
-    height: 140px;
-  }
-}
-
-@media (min-width: 768px) {
-  .youtube-card {
-    max-width: 300px;
+    height: 200px;
   }
 
   .title {
-    font-size: 1.4rem;
+    font-size: 22px;
   }
 
   .description {
-    font-size: 1.1rem;
+    font-size: 12px;
   }
 }
 
-@media (min-width: 992px) {
-  .youtube-card {
-    max-width: 320px;
+/* Mobiles */
+@media (min-width: 576px) {
+  .youtubeCard {
+    max-width: 280px;
+  }
+  .thumbnail {
+    height: 140px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) {
+  .youtubeCard {
+    max-width: 300px;
   }
 
   .thumbnail {
@@ -69,16 +70,34 @@
   }
 
   .title {
-    font-size: 1.6rem;
+    font-size: 24px;
   }
 
   .description {
-    font-size: 1.2rem;
+    font-size: 14px;
   }
 }
+/* laptops */
+@media (min-width: 992px) {
+  .youtubeCard {
+    max-width: 360px;
+  }
 
+  .thumbnail {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+/* desktops */
 @media (min-width: 1200px) {
-  .youtube-card {
+  .youtubeCard {
     max-width: 360px;
   }
 
@@ -87,10 +106,10 @@
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 28px;
   }
 
   .description {
-    font-size: 1.3rem;
+    font-size: 18px;
   }
 }
