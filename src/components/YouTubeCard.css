@@ -1,0 +1,96 @@
+/* src/YouTubeCard.css */
+.youtube-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+  width: 100%;
+  max-width: 320px;
+  transition: box-shadow 0.3s ease;
+}
+
+.youtube-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+  background-color: #ddd;
+  height: 180px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  .youtube-card {
+    max-width: 280px;
+  }
+
+  .thumbnail {
+    height: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .youtube-card {
+    max-width: 300px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .youtube-card {
+    max-width: 320px;
+  }
+
+  .thumbnail {
+    height: 160px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .youtube-card {
+    max-width: 360px;
+  }
+
+  .thumbnail {
+    height: 200px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+}
